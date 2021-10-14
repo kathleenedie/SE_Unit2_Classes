@@ -1,21 +1,26 @@
-import com.sun.xml.internal.ws.api.pipe.Engine;
-
 import java.util.ArrayList;
 
 public class Truck extends Vehicle{
 
-    private ArrayList<Wheel> wheel;
+    private ArrayList<Wheel> wheels;
     private Engine engine;
 
     public Truck(Engine engine) {
-        this.wheel = new ArrayList<Wheel>();
+        this.wheels = new ArrayList<Wheel>();
         this.engine = engine;
     }
 
-    public ArrayList<Wheel> getWheel() { return this.wheel;
+    public ArrayList<Wheel> getWheel() {
+        return this.wheels;
     }
 
-    public Engine getEngine(){
+    public Engine getEngine() {
         return this.engine;
     }
+
+    public ArrayList<Wheel> addWheel(Wheel wheel){
+        wheels.add(wheel);
+        return wheels;
+    }
+
 }
