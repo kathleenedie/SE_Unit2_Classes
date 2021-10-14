@@ -1,6 +1,6 @@
 import org.junit.Before;
 import org.junit.Test;
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 
 public class TruckTest {
 
@@ -40,5 +40,14 @@ public class TruckTest {
     @Test
     public void canStartEngine(){
         assertEquals("Vroom, vroom", truck1.StartEngine());
+    }
+
+    @Test
+    public void canMoveWheels(){
+        assertEquals("the wheels on the truck go 'round and 'round", truck1.moveWheels());
+    }
+    @Test
+    public void canCallAction(){
+        assertEquals("We are moving", truck1.action());
     }
 }

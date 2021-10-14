@@ -23,4 +23,12 @@ public class Truck extends Vehicle{
         return wheels;
     }
 
+    public String moveWheels(){
+        return "the wheels on the truck go 'round and 'round";
+    }
+
+    public String action(){
+        return "We are moving";
+    }
+
 }
